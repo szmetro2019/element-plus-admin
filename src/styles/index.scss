@@ -1,0 +1,160 @@
+@import "./var.scss";
+
+html,
+body,
+div {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 14px;
+}
+
+body {
+    background-color: #f8f9fa;
+}
+
+img,
+svg,
+video,
+canvas,
+audio,
+iframe,
+embed,
+object {
+    display: inline;
+    vertical-align: baseline;
+}
+
+// 魔改styles
+.mg-w-full {
+    width: 100% !important;
+}
+
+// 全局layout
+.page-layout {
+    height: 100vh;
+    overflow: hidden;
+    background-color: #f8f9fa;
+    display: flex;
+
+    .page-sider {
+        flex: none;
+        box-sizing: border-box;
+        background-color: #fff;
+        overflow: hidden;
+        border-right: 1px solid #efefef;
+    }
+
+    .page-body {
+        flex: 1;
+        width: 0;
+        height: 100vh;
+    }
+}
+
+// 登录页
+.page-login-scrollbar-wrap {
+    height: 100vh;
+    overflow: hidden;
+
+    .page-login-scrollbar {
+        @extend .basic-page-scrollbar;
+    }
+}
+
+// 侧边栏
+.page-side-wrap {
+    border-right: none !important;
+}
+
+.side-scrollbar-wrap {
+    height: 100vh;
+    width: 200px;
+    background-color: rgba(31, 41, 55, 1);
+
+    .el-menu-item:hover {
+        background-color: transparent !important;
+        color: rgba(255, 255, 255, 1);
+    }
+
+    .page-icon-box {
+        display: flex;
+        width: 100%;
+        align-items: center;
+
+        .page-side-icon {
+            margin-right: 8px;
+            margin-top: -2px;
+            font-size: 16px !important;
+        }
+
+        span {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    }
+
+    .side-scrollbar-box {
+        @extend .basic-side-scrollbar;
+    }
+}
+
+.select-scrollbar-styles {
+    @extend .basic-select-scrollbar;
+}
+
+// views - page
+.page-wrap {
+    box-sizing: border-box;
+}
+
+.page-wrap-box {
+    padding: 14px;
+}
+
+.mg-card-body-bt {
+    .el-card__body {
+        padding-bottom: 2px;
+    }
+}
+
+.mg-card-top {
+    margin-top: 14px;
+}
+
+
+// form表单
+.page-form-wdith300 {
+    width: 300px !important;
+}
+
+
+// ---------------魔改
+.p-4 {
+    .el-card {
+
+        .el-card__header,
+        .el-card__body {
+            padding: 1rem;
+        }
+    }
+}
+
+// .el-pagination .el-input__suffix{
+//     right: 8px;
+// }
+
+
+.result-wrap {
+    height: 100vh;
+    overflow: hidden;
+
+    .result-wrap-scrollbar {
+        @extend .basic-page-scrollbar;
+    }
+
+}

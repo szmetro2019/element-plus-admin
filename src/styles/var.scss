@@ -1,0 +1,64 @@
+// 全局主题色
+$color-primary:#4f46e5;
+// 全局主题色(0.3 - opacity)
+$color-primary-linear:rgba(54, 199, 206, 0.3);
+
+// 全局文字主题色
+$text-color-primary:#333;
+// 全局文字辅助色
+$text-color-auxiliary:#666;
+// 全局文字灰色
+$text-color-gray:#999;
+
+// 全局白色文字
+$text-color-white:#fff;
+// 全局白色渐变文字（0.8 - opacity)
+$text-color-white-linear:rgba(255, 255, 255, 0.8);
+
+// global 「sider」 scrollbar styles
+.basic-side-scrollbar {
+  height: 100%;
+
+  &>.el-scrollbar__bar.is-vertical {
+    width: 4px;
+    border-radius: 0;
+    background-color: rgba(188, 188, 188, 0);
+
+    &>.el-scrollbar__thumb {
+      border-radius: 0;
+      background-color: rgba(100, 100, 100, 0.7);
+    }
+  }
+}
+
+// global 「page」  scrollbar styles
+.basic-page-scrollbar {
+  height: 100%;
+
+  &>.el-scrollbar__bar.is-vertical {
+    width: 4px;
+    border-radius: 0;
+
+    &>.el-scrollbar__thumb {
+      border-radius: 0;
+      background-color: #4f46e5;
+      opacity: 0.7 !important;
+    }
+  }
+}
+
+// global select scrollbar styles
+.basic-select-scrollbar {
+
+  .el-scrollbar__bar.is-vertical {
+    width: 4px;
+    border-radius: 0;
+    display: block !important;
+
+    &>.el-scrollbar__thumb {
+      border-radius: 0;
+      background-color: #4f46e5;
+      opacity: 0.7 !important;
+    }
+  }
+}
