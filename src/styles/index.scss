@@ -15,19 +15,9 @@ html {
 body {
     background-color: #f8f9fa;
 }
-
-img,
-svg,
-video,
-canvas,
-audio,
-iframe,
-embed,
-object {
-    display: inline;
-    vertical-align: baseline;
+a,a:hover,a:focus{
+    text-decoration: none;
 }
-
 // 魔改styles
 .mg-w-full {
     width: 100% !important;
